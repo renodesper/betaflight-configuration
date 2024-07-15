@@ -35,14 +35,21 @@ beacon RX_SET
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 900 1300 0 0
-aux 2 46 3 1700 2100 0 0
-aux 3 13 4 1700 2100 0 0
-aux 4 28 1 1300 1700 0 0
-aux 5 35 1 1700 2100 0 0
+aux 2 27 2 1300 1700 0 0
+aux 3 46 3 1700 2100 0 0
+aux 4 13 4 1700 2100 0 0
+aux 5 28 1 1300 1700 0 0
+aux 6 35 1 1700 2100 0 0
+
+# rxfail
+rxfail 3 s 1975
+rxfail 5 s 1000
 
 # master
 set acc_calibration = -42,-11,3,1
 set dshot_bidir = ON
+set failsafe_delay = 12
+set failsafe_throttle_low_delay = 300
 set failsafe_procedure = GPS-RESCUE
 set vbat_min_cell_voltage = 350
 set vbat_warning_cell_voltage = 360
@@ -51,6 +58,12 @@ set small_angle = 180
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 set gps_set_home_point_once = ON
+set gps_rescue_alt_mode = CURRENT_ALT
+set gps_rescue_initial_climb = 50
+set gps_rescue_ascend_rate = 1000
+set gps_rescue_ground_speed = 2100
+set gps_rescue_max_angle = 50
+set gps_rescue_min_sats = 6
 set gps_rescue_allow_arming_without_fix = ON
 set osd_vbat_pos = 393
 set osd_link_quality_pos = 259
