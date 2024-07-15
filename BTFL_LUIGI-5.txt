@@ -48,6 +48,7 @@ set vbat_min_cell_voltage = 350
 set vbat_warning_cell_voltage = 360
 set beeper_dshot_beacon_tone = 3
 set small_angle = 180
+set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 set gps_set_home_point_once = ON
 set gps_rescue_allow_arming_without_fix = ON
