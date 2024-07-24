@@ -42,10 +42,11 @@ aux 5 28 1 1300 1700 0 0
 aux 6 35 1 1700 2100 0 0
 
 # rxfail
-rxfail 3 s 1975
+rxfail 3 s 1700
 rxfail 5 s 1000
 
 # master
+set acc_trim_pitch = -1
 set acc_calibration = -42,-11,3,1
 set dshot_bidir = ON
 set failsafe_delay = 12
@@ -59,7 +60,7 @@ set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 set gps_set_home_point_once = ON
 set gps_rescue_alt_mode = CURRENT_ALT
-set gps_rescue_initial_climb = 50
+set gps_rescue_initial_climb = 20
 set gps_rescue_ascend_rate = 1000
 set gps_rescue_ground_speed = 2100
 set gps_rescue_max_angle = 50
@@ -80,15 +81,15 @@ set osd_gps_speed_pos = 102
 set osd_gps_lon_pos = 18465
 set osd_gps_lat_pos = 18497
 set osd_gps_sats_pos = 2145
-set osd_home_dir_pos = 2625
-set osd_home_dist_pos = 2627
+set osd_home_dir_pos = 2618
+set osd_home_dist_pos = 2625
 set osd_flight_dist_pos = 3151
 set osd_compass_bar_pos = 1095
 set osd_altitude_pos = 2593
 set osd_warnings_pos = 14869
 set osd_avg_cell_voltage_pos = 2648
 set osd_ready_mode_pos = 568
-set osd_flip_arrow_pos = 2618
+set osd_flip_arrow_pos = 2138
 set osd_core_temp_pos = 1
 set craft_name = luigi-5
 set pilot_name = bosanmoto
