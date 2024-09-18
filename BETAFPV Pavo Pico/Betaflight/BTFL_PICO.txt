@@ -1,0 +1,86 @@
+# version
+# Betaflight / STM32F405 (S405) 4.5.1 Aug  4 2024 / 09:42:33 (77d01ba3b) MSP API: 1.46
+# config rev: ad0057e
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name BETAFPVF405
+manufacturer_id BEFH
+mcu_id 003000263133470f37383735
+signature
+
+# name: PICO
+
+# feature
+feature TELEMETRY
+feature OSD
+
+# serial
+serial 2 64 115200 57600 0 115200
+serial 3 131073 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 4 1700 2100 0 0
+aux 3 35 2 1700 2100 0 0
+aux 4 36 2 1300 1700 0 0
+
+# master
+set acc_calibration = -23,15,-12,1
+set motor_output_reordering = 2,3,0,1,4,5,6,7
+set vbat_max_cell_voltage = 435
+set vbat_min_cell_voltage = 340
+set vbat_warning_cell_voltage = 360
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_vbat_pos = 2647
+set osd_link_quality_pos = 2113
+set osd_link_tx_power_pos = 363
+set osd_rssi_dbm_pos = 2081
+set osd_tim_2_pos = 3118
+set osd_flymode_pos = 2593
+set osd_craft_name_pos = 3630
+set osd_pilot_name_pos = 2625
+set osd_gps_lon_pos = 16417
+set osd_gps_lat_pos = 16449
+set osd_gps_sats_pos = 97
+set osd_home_dist_pos = 588
+set osd_flight_dist_pos = 3151
+set osd_altitude_pos = 16940
+set osd_warnings_pos = 14677
+set osd_avg_cell_voltage_pos = 2615
+set osd_flip_arrow_pos = 2106
+set gyro_1_sensor_align = CW270FLIP
+set gyro_1_align_pitch = 1800
+set craft_name = PICO
+set pilot_name = BOSANMOTO
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
