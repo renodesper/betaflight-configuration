@@ -73,6 +73,12 @@ profile 0
 
 rateprofile 0
 
+# rateprofile 0
+set rateprofile_name = C1
+set roll_srate = 94
+set pitch_srate = 94
+set yaw_srate = 94
+
 rateprofile 1
 
 rateprofile 2
