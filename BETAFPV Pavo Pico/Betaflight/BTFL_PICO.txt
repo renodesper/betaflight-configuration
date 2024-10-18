@@ -28,14 +28,12 @@ aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1700 2100 0 0
 aux 2 13 4 1700 2100 0 0
 aux 3 35 2 1700 2100 0 0
-aux 4 36 2 1300 1700 0 0
 
 # master
 set acc_calibration = -23,15,-12,1
 set motor_output_reordering = 2,3,0,1,4,5,6,7
-set vbat_max_cell_voltage = 435
-set vbat_min_cell_voltage = 340
-set vbat_warning_cell_voltage = 360
+set vbat_max_cell_voltage = 440
+set vbat_warning_cell_voltage = 345
 set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_vbat_pos = 2647
@@ -54,11 +52,11 @@ set osd_flight_dist_pos = 3151
 set osd_altitude_pos = 16940
 set osd_warnings_pos = 14677
 set osd_avg_cell_voltage_pos = 2615
-set osd_flip_arrow_pos = 2106
+set osd_flip_arrow_pos = 58
 set gyro_1_sensor_align = CW270FLIP
 set gyro_1_align_pitch = 1800
 set craft_name = PICO
-set pilot_name = BOSANMOTO
+set pilot_name = @BOSANMOTO
 
 profile 0
 
@@ -75,9 +73,15 @@ rateprofile 0
 
 # rateprofile 0
 set rateprofile_name = C1
-set roll_srate = 94
-set pitch_srate = 94
-set yaw_srate = 94
+set roll_rc_rate = 10
+set pitch_rc_rate = 10
+set yaw_rc_rate = 10
+set roll_expo = 40
+set pitch_expo = 40
+set yaw_expo = 60
+set roll_srate = 100
+set pitch_srate = 100
+set yaw_srate = 120
 
 rateprofile 1
 
