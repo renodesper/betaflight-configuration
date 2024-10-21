@@ -54,6 +54,7 @@ set failsafe_procedure = GPS-RESCUE
 set vbat_min_cell_voltage = 350
 set vbat_warning_cell_voltage = 360
 set beeper_dshot_beacon_tone = 3
+set yaw_motors_reversed = ON
 set small_angle = 180
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
