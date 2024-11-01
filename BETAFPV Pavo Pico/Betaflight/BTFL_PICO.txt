@@ -28,6 +28,7 @@ aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1700 2100 0 0
 aux 2 13 4 1700 2100 0 0
 aux 3 35 2 1700 2100 0 0
+aux 4 49 2 1300 1700 0 0
 
 # master
 set acc_calibration = -23,15,-12,1
@@ -62,6 +63,11 @@ set craft_name = PICO
 set pilot_name = @BOSANMOTO
 
 profile 0
+
+# profile 0
+set launch_control_mode = PITCHONLY
+set launch_trigger_throttle_percent = 30
+set launch_angle_limit = 30
 
 profile 1
 

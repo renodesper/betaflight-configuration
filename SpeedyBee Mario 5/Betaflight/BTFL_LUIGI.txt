@@ -39,7 +39,7 @@ aux 2 46 3 1700 2100 0 0
 aux 3 13 4 1700 2100 0 0
 aux 4 28 1 1300 1700 0 0
 aux 5 35 2 1700 2100 0 0
-aux 6 53 2 1300 1700 0 0
+aux 6 49 2 1300 1700 0 0
 
 # rxfail
 rxfail 3 s 1700
@@ -95,6 +95,11 @@ set craft_name = LUIGI
 set pilot_name = @BOSANMOTO
 
 profile 0
+
+# profile 0
+set launch_control_mode = PITCHONLY
+set launch_trigger_throttle_percent = 30
+set launch_angle_limit = 30
 
 profile 1
 
