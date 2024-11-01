@@ -63,6 +63,7 @@ set gps_rescue_alt_mode = CURRENT_ALT
 set gps_rescue_descend_rate = 70
 set gps_rescue_throttle_hover = 1194
 set gps_rescue_allow_arming_without_fix = ON
+set runaway_takeoff_prevention = OFF
 set osd_vbat_pos = 393
 set osd_link_quality_pos = 259
 set osd_link_tx_power_pos = 167
